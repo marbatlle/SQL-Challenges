@@ -1,13 +1,3 @@
-# SQL Masterclass for Data Scientists
-Free PostgreSQL course followed from [DataWithDanny](https://github.com/DataWithDanny/sql-masterclass), focused on a Cryptocurrency Trading Case study based on a single schema called [trading](https://www.db-fiddle.com/f/cnLCK4ChsNfr5ViG6vzePg/7)
-
-## Step 1 - Introduction
-There are 3 data tables available to us in this schema which we can use to run our SQL queries with:
-
-1. Members
-1. Prices
-1. Transactions
-
 ## Step 2 - Exploring The Members Data
 
 1. Show only the top 5 rows from the trading.members table
@@ -143,41 +133,3 @@ There are 3 data tables available to us in this schema which we can use to run o
     | mentor_count |
     | ------------ |
     | 6            |
-
-## Step 3 - Daily Prices
-
-1. How many total records do we have in the trading.prices table?
-1. How many records are there per ticker value?
-1. What is the minimum and maximum market_date values?
-1. Are there differences in the minimum and maximum market_date values for each ticker?
-1. What is the average of the price column for Bitcoin records during the year 2020?
-1. What is the monthly average of the price column for Ethereum in 2020? Sort the output in chronological order and also round the average price value to 2 decimal places
-1. Are there any duplicate market_date values for any ticker value in our table?
-1. How many days from the trading.prices table exist where the high price of Bitcoin is over $30,000?
-1. How many "breakout" days were there in 2020 where the price column is greater than the open column for each ticker?
-1. How many "non_breakout" days were there in 2020 where the price column is less than the open column for each ticker?
-1. What percentage of days in 2020 were breakout days vs non-breakout days? Round the percentages to 2 decimal places
-
-
-
-## Step 4
-
-## Step 5
-
-## Step 6
-
-## Step 7
-
-## Step 8
-
-## Step 9
-
-## Step 10
-
-## Step 11
-
-## Step 12
-
-## Step 13
-
-## The End
