@@ -1,4 +1,4 @@
-196. Delete Duplicate Emails
+# 197. Rising Temperature
 
 ## Schema
 

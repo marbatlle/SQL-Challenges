@@ -1,27 +1,29 @@
-196. Delete Duplicate Emails
+# 196. Delete Duplicate Emails
 
 ## Schema
 
-Table: Courses
+Table: Cinema
 
-+-------------+---------+
-| Column Name | Type    |
-+-------------+---------+
-| student     | varchar |
-| class       | varchar |
-+-------------+---------+
-(student, class) is the primary key column for this table.
-Each row of this table indicates the name of a student and the class in which they are enrolled.
- 
++----------------+----------+
+| Column Name    | Type     |
++----------------+----------+
+| id             | int      |
+| movie          | varchar  |
+| description    | varchar  |
+| rating         | float    |
++----------------+----------+
+id is the primary key for this table.
+Each row contains information about the name of a movie, its genre, and its rating.
+rating is a 2 decimal places float in the range [0, 10]
 ## Problem
-Write an SQL query to report all the classes that have at least five students.
+Write an SQL query to report the movies with an odd-numbered ID and a description that is not "boring".
+
+Return the result table ordered by rating in descending order.
 
 ## MySQL query statement
-
 SELECT
-    name,
-    population,
-    area
-FROM world
-WHERE area >= 3000000 
-    OR population >= 25000000; 
+    *
+FROM cinema
+WHERE description NOT LIKE "boring"
+    AND id % 2 <> 0
+ORDER BY rating DESC;

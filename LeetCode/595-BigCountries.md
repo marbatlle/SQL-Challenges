@@ -1,4 +1,4 @@
-196. Delete Duplicate Emails
+# 595. Big Countries
 
 ## Schema
 
